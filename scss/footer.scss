@@ -1,8 +1,14 @@
 .container{
     .footer{
+        .footer-1{
+            height: 250px;
+            background-color: $color-2;
+        }
         .copyrigth{
             text-align: center;
             padding: $padding;
+            color: $color-2;
+            background-color: $color-1;
         }
     }
 }

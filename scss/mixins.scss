@@ -3,3 +3,6 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
+@mixin shadow {
+    box-shadow: 2px 0px 5px rgba($color-3, .3);
+}
