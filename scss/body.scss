@@ -9,15 +9,69 @@
         }
         #sucursales{
             .sucursal{
-                width: 300px;
-                @include shadow;
-                .sucursal-title{
-                    border-radius: $radius-1 $radius-1 0 0;
-                    background-color: $color-2;
-                    color:$color-4;
+                
+                
+                
+                .sucursal-link{
+                    margin-top: $margin;
+                }
+                .sucursal-img{
+                    height:500px;
+                    overflow: hidden;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        position: absolute;
+                    }
+                    .capa{
+                        background-color: rgba(black, .8);
+                        width: 100%;
+                        height: 500px;
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        z-index: 3;
+                    }
+                    .sucursal-content{
+                        padding: $padding;
+                        z-index: 20;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        
+                        .sucursal-description{
+                            text-align: center;
+                            .sucursal-title{
+                                color:$color-1;
+                                font-size: 2em;
+                                h3{
+                                    font-family: $font-2;
+                                }
+                            }
+                            p{
+                                color:$color-4;
+                                &:last-child{
+                                    color:$color-1;
+                                }
+                            }
+                        }
+                        .sucursal-action{
+                            margin:0 auto;
+                            .sucursal-icon{
+                                color:$color-1;
+                                text-align: center;
+                            }
+                            .sucursal-link{
+                                a{
+                                    @include btn-slider;
+                                }
+                            }
+                        }
+                    }
                 }
                 .sucursal-map{
-                    width: 300px;
+                    width: 100%;
                     height: 200px;
                     overflow: hidden;
                     
@@ -25,9 +79,6 @@
                         width: 100%;
                         height: 100%;
                     }
-                }
-                .sucursal-description{
-                    border-top: solid 2px $color-2;
                 }
             }
         }

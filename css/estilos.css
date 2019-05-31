@@ -29,7 +29,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-weight: normal !important; }
 
 p {
   margin: 10px; }
@@ -50,16 +51,65 @@ h3 {
 .section {
   padding-left: 100px;
   padding-right: 100px; }
+  .section i {
+    color: #ff6300;
+    display: block;
+    text-align: center; }
   .section .section-title {
     padding: 10px;
     color: #633B00;
     font-size: 3em; }
   .section .section-article {
     padding: 0 10px 10px 10px; }
+  .section a.link {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    border-radius: 5px; }
+    .section a.link:hover {
+      background-color: #2980b9; }
 
 .container .nav {
+  padding-left: 100px;
+  padding-right: 100px;
   background-color: #633B00;
-  height: 60px; }
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .container .nav .nav-logo {
+    width: 100px;
+    height: 100px;
+    background-color: #633B00;
+    z-index: 4;
+    border-radius: 200px;
+    position: relative; }
+    .container .nav .nav-logo img {
+      max-width: 90%;
+      padding: 10px;
+      margin: 0 auto; }
+  .container .nav .nav-social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .container .nav .nav-social ul li {
+      list-style: none;
+      margin-left: 10px;
+      margin-top: 10px; }
+      .container .nav .nav-social ul li a {
+        text-decoration: none;
+        color: white;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .container .nav .nav-social ul li a:hover {
+          color: #ff6300; }
 
 .header {
   height: 500px;
@@ -103,30 +153,103 @@ h3 {
     width: 100%;
     height: 600px; }
 
-.container .body #sucursales .sucursal {
-  width: 300px;
-  -webkit-box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3); }
-  .container .body #sucursales .sucursal .sucursal-title {
-    border-radius: 5px 5px 0 0;
+.container .body #sucursales .sucursal .sucursal-link {
+  margin-top: 10px; }
+
+.container .body #sucursales .sucursal .sucursal-img {
+  height: 500px;
+  overflow: hidden;
+  position: relative; }
+  .container .body #sucursales .sucursal .sucursal-img img {
+    width: 100%;
+    position: absolute; }
+  .container .body #sucursales .sucursal .sucursal-img .capa {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3; }
+  .container .body #sucursales .sucursal .sucursal-img .sucursal-content {
+    padding: 10px;
+    z-index: 20;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description {
+      text-align: center; }
+      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description .sucursal-title {
+        color: #ff6300;
+        font-size: 2em; }
+        .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description .sucursal-title h3 {
+          font-family: "Montez", cursive; }
+      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description p {
+        color: white; }
+        .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description p:last-child {
+          color: #ff6300; }
+    .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action {
+      margin: 0 auto; }
+      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action .sucursal-icon {
+        color: #ff6300;
+        text-align: center; }
+      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action .sucursal-link a {
+        text-decoration: none;
+        display: block;
+        color: #ff6300;
+        border: 2px solid #ff6300;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action .sucursal-link a:hover {
+          background-color: #ff6300;
+          color: rgba(0, 0, 0, 0.8); }
+
+.container .body #sucursales .sucursal .sucursal-map {
+  width: 100%;
+  height: 200px;
+  overflow: hidden; }
+  .container .body #sucursales .sucursal .sucursal-map iframe {
+    width: 100%;
+    height: 100%; }
+
+.container .footer {
+  color: #ff6300; }
+  .container .footer .footer-social {
+    background-color: #402700;
+    padding: 10px; }
+    .container .footer .footer-social .icon {
+      text-align: center; }
+      .container .footer .footer-social .icon a {
+        color: #633B00;
+        text-decoration: none;
+        font-size: 0.9em;
+        margin: 10px;
+        border-radius: 50px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .container .footer .footer-social .icon a:hover {
+          color: #402700; }
+  .container .footer .footer-1 {
+    padding: 10px;
     background-color: #633B00;
-    color: white; }
-  .container .body #sucursales .sucursal .sucursal-map {
-    width: 300px;
-    height: 200px;
-    overflow: hidden; }
-    .container .body #sucursales .sucursal .sucursal-map iframe {
-      width: 100%;
-      height: 100%; }
-  .container .body #sucursales .sucursal .sucursal-description {
-    border-top: solid 2px #633B00; }
-
-.container .footer .footer-1 {
-  height: 250px;
-  background-color: #633B00; }
-
-.container .footer .copyrigth {
-  text-align: center;
-  padding: 10px;
-  color: #633B00;
-  background-color: #ff6300; }
+    text-align: center; }
+    .container .footer .footer-1 p:first-child {
+      text-decoration: underline; }
+    .container .footer .footer-1 p span {
+      color: #ff6300; }
+  .container .footer .copyrigth {
+    text-align: center;
+    padding: 10px;
+    color: #633B00;
+    background-color: #402700; }

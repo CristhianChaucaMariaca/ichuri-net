@@ -6,3 +6,17 @@
 @mixin shadow {
     box-shadow: 2px 0px 5px rgba($color-3, .3);
 }
+@mixin btn-slider {
+    text-decoration: none;
+    display: block;
+    color:$color-1;
+    border:2px solid $color-1;
+    text-align: center;
+    border-radius: $radius-1;
+    padding: $padding;
+    transition: $transition;
+    &:hover{
+        background-color: $color-1;
+        color:rgba($color-3, .8);
+    }
+}

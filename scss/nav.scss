@@ -1,7 +1,41 @@
 .container{
     .nav{
+        padding-left: 100px;
+        padding-right: 100px;
         background-color: $color-2;
         height: 60px;
-        
+        display: flex;
+        justify-content: space-between;
+        .nav-logo{
+            width: 100px;
+            height: 100px;
+            background-color: $color-2;
+            z-index: 4;
+            border-radius: 200px;
+            position: relative;
+            img{
+                max-width: 90%;
+                padding: $padding;
+                margin: 0 auto;
+            }
+        }
+        .nav-social{
+            ul{
+                display: flex;
+                li{
+                    list-style: none;
+                    margin-left: $margin;
+                    margin-top: $margin;
+                    a{
+                        text-decoration: none;
+                        color:$color-4;
+                        transition: $transition;
+                        &:hover{
+                            color:$color-1;
+                        }
+                    }
+                }
+            }
+        }        
     }
 }

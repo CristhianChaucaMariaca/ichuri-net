@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: $font-1;
+    font-weight: normal !important;
 }
 p{
     margin:$margin;
@@ -21,7 +22,12 @@ h3{
 }
 .section{
     padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 100px;    
+    i{
+        color:$color-1;
+        display: block;
+        text-align: center;
+    }
     .section-title{
         padding: $padding;
         color:$color-2;
@@ -29,5 +35,18 @@ h3{
     }
     .section-article{
         padding: 0 $padding $padding $padding;
+    }
+    a.link{
+        text-decoration:none;
+        display: block;
+        padding: $padding;
+        background-color: $color-link;
+        color:$color-4;
+        text-align: center;
+        border-radius: $radius-1;
+        &:hover{
+            background-color:$color-link-hover;
+
+        }
     }
 }
