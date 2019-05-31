@@ -1,24 +1,40 @@
 .container{
     .body{
         .video{
-            width: 100%;
-            iframe{
+            margin-top: $margin;
+            .video-title{
+                background-color: $color-2;
+                border-radius: $radius-1 $radius-1 0 0;
+                display: flex;
+                justify-content: space-between;
+                h2{
+                    padding: $padding;
+                    color:$color-1;
+                    font-family: $font-2;
+                    font-size: 2em;
+                }
+                .icon-ichuri{
+                    width: 70px;
+                    align-self: center;
+                    img{
+                        max-width: 100%;;
+                    }
+                }
+            }
+            .video-youtube{
                 width: 100%;
-                height: 600px;
+                iframe{
+                    width: 100%;
+                    height: 600px;
+                }
             }
         }
         #sucursales{
             .sucursal{
-                
-                
-                
                 .sucursal-link{
                     margin-top: $margin;
                 }
                 .sucursal-img{
-                    height:500px;
-                    overflow: hidden;
-                    position: relative;
                     img{
                         width: 100%;
                         position: absolute;
@@ -37,10 +53,9 @@
                         z-index: 20;
                         position: relative;
                         display: flex;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        
                         .sucursal-description{
+                            width: 50%;
+                            margin: auto 0;
                             text-align: center;
                             .sucursal-title{
                                 color:$color-1;
@@ -50,34 +65,61 @@
                                 }
                             }
                             p{
-                                color:$color-4;
+                                color:$color-3-s;
                                 &:last-child{
                                     color:$color-1;
                                 }
                             }
                         }
                         .sucursal-action{
+                            align-self: center;
                             margin:0 auto;
                             .sucursal-icon{
                                 color:$color-1;
                                 text-align: center;
                             }
                             .sucursal-link{
-                                a{
-                                    @include btn-slider;
+                                .a{
+                                    @include btn-s;
                                 }
                             }
                         }
-                    }
-                }
-                .sucursal-map{
-                    width: 100%;
-                    height: 200px;
-                    overflow: hidden;
-                    
-                    iframe{
-                        width: 100%;
-                        height: 100%;
+                        .sucursal-map{
+                            display: none;
+                            background-color: rgba($color-3, .8);
+                            position: fixed;
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+                            top:0;
+                            left: 0;
+                            z-index: 5000;
+                            .btn-close{
+                                .icon-cancel-circle{
+                                    color:$color-4;
+                                    right: 20px;
+                                    position: absolute;
+                                    top: 20px;
+                                    font-size: 30px;
+                                    transition:$transition;
+                                    &:hover{
+                                        cursor: pointer;
+                                        color:$color-1;
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                            iframe{
+                                width: 80%;
+                                height: 80%;
+                                margin:auto;
+                                position: absolute;
+                                top:0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                            }
+                        }
                     }
                 }
             }

@@ -16,6 +16,25 @@ h2{
 h3{
     text-align: center;
 }
+.hr{
+    width: 60%;
+    margin: $margin*2 auto;
+    height: 1px;
+    background-color: $color-2;
+    position: relative;
+    display: block;
+    .icon{
+        position: absolute;
+        display: block;
+        padding-left: $padding*2;
+        padding-right: $padding*2;
+        color:$color-1;
+        background-color: $color-4;
+        font-size: 1.2em;
+        margin-left: 50%;
+        top:-10px;
+    }
+}
 .title-3{
     font-family: $font-1;
     padding: $padding;

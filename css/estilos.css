@@ -44,6 +44,24 @@ h2 {
 h3 {
   text-align: center; }
 
+.hr {
+  width: 60%;
+  margin: 20px auto;
+  height: 1px;
+  background-color: #633B00;
+  position: relative;
+  display: block; }
+  .hr .icon {
+    position: absolute;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ff6300;
+    background-color: white;
+    font-size: 1.2em;
+    margin-left: 50%;
+    top: -10px; }
+
 .title-3 {
   font-family: "Roboto", sans-serif;
   padding: 10px; }
@@ -80,20 +98,33 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 2px solid #ff6300;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .container .nav .nav-logo {
-    width: 100px;
-    height: 100px;
-    background-color: #633B00;
-    z-index: 4;
-    border-radius: 200px;
-    position: relative; }
-    .container .nav .nav-logo img {
-      max-width: 90%;
-      padding: 10px;
-      margin: 0 auto; }
+  .container .nav .nav-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .container .nav .nav-brand .nav-logo {
+      width: 100px;
+      height: 100px;
+      background-color: #633B00;
+      border-bottom: 3px solid #ff6300;
+      z-index: 4;
+      border-radius: 200px;
+      position: relative; }
+      .container .nav .nav-brand .nav-logo img {
+        max-width: 90%;
+        padding: 10px;
+        margin: 0 auto; }
+    .container .nav .nav-brand .name-brand {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+      .container .nav .nav-brand .name-brand h1 {
+        color: #ff6300;
+        text-transform: uppercase; }
   .container .nav .nav-social ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -112,7 +143,7 @@ h3 {
           color: #ff6300; }
 
 .header {
-  height: 500px;
+  height: 100vh;
   overflow: hidden;
   position: relative; }
   .header .slider {
@@ -123,9 +154,9 @@ h3 {
       top: -180px;
       z-index: -1; }
     .header .slider .capa {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.7);
       width: 100%;
-      height: 500px;
+      height: 100vh;
       position: absolute;
       top: 0;
       left: 0;
@@ -148,79 +179,131 @@ h3 {
       right: 0; }
 
 .container .body .video {
-  width: 100%; }
-  .container .body .video iframe {
-    width: 100%;
-    height: 600px; }
+  margin-top: 10px; }
+  .container .body .video .video-title {
+    background-color: #633B00;
+    border-radius: 5px 5px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .container .body .video .video-title h2 {
+      padding: 10px;
+      color: #ff6300;
+      font-family: "Montez", cursive;
+      font-size: 2em; }
+    .container .body .video .video-title .icon-ichuri {
+      width: 70px;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+      .container .body .video .video-title .icon-ichuri img {
+        max-width: 100%; }
+  .container .body .video .video-youtube {
+    width: 100%; }
+    .container .body .video .video-youtube iframe {
+      width: 100%;
+      height: 600px; }
 
 .container .body #sucursales .sucursal .sucursal-link {
   margin-top: 10px; }
 
-.container .body #sucursales .sucursal .sucursal-img {
+.container .body #sucursales .sucursal .sucursal-img img {
+  width: 100%;
+  position: absolute; }
+
+.container .body #sucursales .sucursal .sucursal-img .capa {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
   height: 500px;
-  overflow: hidden;
-  position: relative; }
-  .container .body #sucursales .sucursal .sucursal-img img {
-    width: 100%;
-    position: absolute; }
-  .container .body #sucursales .sucursal .sucursal-img .capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3; }
+
+.container .body #sucursales .sucursal .sucursal-img .sucursal-content {
+  padding: 10px;
+  z-index: 20;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description {
+    width: 50%;
+    margin: auto 0;
+    text-align: center; }
+    .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description .sucursal-title {
+      color: #ff6300;
+      font-size: 2em; }
+      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description .sucursal-title h3 {
+        font-family: "Montez", cursive; }
+    .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description p {
+      color: #7f8c8d; }
+      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description p:last-child {
+        color: #ff6300; }
+  .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin: 0 auto; }
+    .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action .sucursal-icon {
+      color: #ff6300;
+      text-align: center; }
+    .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action .sucursal-link .a {
+      text-decoration: none;
+      display: block;
+      color: #ff6300;
+      border: 2px solid #ff6300;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      font-size: 0.7em; }
+      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action .sucursal-link .a:hover {
+        background-color: #ff6300;
+        color: white;
+        cursor: pointer;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+  .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-map {
+    display: none;
     background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
     width: 100%;
-    height: 500px;
-    position: absolute;
+    height: 100%;
+    overflow: hidden;
     top: 0;
     left: 0;
-    z-index: 3; }
-  .container .body #sucursales .sucursal .sucursal-img .sucursal-content {
-    padding: 10px;
-    z-index: 20;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description {
-      text-align: center; }
-      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description .sucursal-title {
+    z-index: 5000; }
+    .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-map .btn-close .icon-cancel-circle {
+      color: white;
+      right: 20px;
+      position: absolute;
+      top: 20px;
+      font-size: 30px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-map .btn-close .icon-cancel-circle:hover {
+        cursor: pointer;
         color: #ff6300;
-        font-size: 2em; }
-        .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description .sucursal-title h3 {
-          font-family: "Montez", cursive; }
-      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description p {
-        color: white; }
-        .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-description p:last-child {
-          color: #ff6300; }
-    .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action {
-      margin: 0 auto; }
-      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action .sucursal-icon {
-        color: #ff6300;
-        text-align: center; }
-      .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action .sucursal-link a {
-        text-decoration: none;
-        display: block;
-        color: #ff6300;
-        border: 2px solid #ff6300;
-        text-align: center;
-        border-radius: 5px;
-        padding: 10px;
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-        .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-action .sucursal-link a:hover {
-          background-color: #ff6300;
-          color: rgba(0, 0, 0, 0.8); }
-
-.container .body #sucursales .sucursal .sucursal-map {
-  width: 100%;
-  height: 200px;
-  overflow: hidden; }
-  .container .body #sucursales .sucursal .sucursal-map iframe {
-    width: 100%;
-    height: 100%; }
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+    .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-map iframe {
+      width: 80%;
+      height: 80%;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
 
 .container .footer {
   color: #ff6300; }

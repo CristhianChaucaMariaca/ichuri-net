@@ -5,18 +5,30 @@
         background-color: $color-2;
         height: 60px;
         display: flex;
+        border-bottom: 2px solid $color-1;
         justify-content: space-between;
-        .nav-logo{
-            width: 100px;
-            height: 100px;
-            background-color: $color-2;
-            z-index: 4;
-            border-radius: 200px;
-            position: relative;
-            img{
-                max-width: 90%;
-                padding: $padding;
-                margin: 0 auto;
+        .nav-brand{
+            display: flex;
+            .nav-logo{
+                width: 100px;
+                height: 100px;
+                background-color: $color-2;
+                border-bottom: 3px solid $color-1;
+                z-index: 4;
+                border-radius: 200px;
+                position: relative;
+                img{
+                    max-width: 90%;
+                    padding: $padding;
+                    margin: 0 auto;
+                }
+            }
+            .name-brand{
+                align-self: center;
+                h1{
+                    color:$color-1;
+                    text-transform: uppercase;
+                }
             }
         }
         .nav-social{
