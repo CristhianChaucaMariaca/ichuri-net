@@ -21,4 +21,18 @@ $(document).ready(function () {
     }, function () {
         $('#santacruz-icon').css("transform","rotate(0deg)");   
     });
+
+    // MENU *******************************************************************
+    $('.btn-ver-menu').click(function () { 
+        $('.pagina-izquierda').addClass("pagina-izquierda-2");
+        setTimeout(function(){
+            $('.pagina-derecha').addClass("pagina-derecha-2");
+        },300)
+    });
+    $('.cerrar-menu').click(function () { 
+        $('.pagina-derecha').removeClass("pagina-derecha-2");
+        setTimeout(function(){
+            $('.pagina-izquierda').removeClass("pagina-izquierda-2");
+        },700)
+    });
 });

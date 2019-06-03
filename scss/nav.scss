@@ -1,12 +1,19 @@
 .container{
     .nav{
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
         background-color: $color-2;
         height: 60px;
         display: flex;
         border-bottom: 2px solid $color-1;
         justify-content: space-between;
+        // width: 90%;
+        // padding-left: 5%;
+        // padding-right: 5%;
+        // position: fixed;
+        // z-index: 200;
+        // top: 0;
+        // left: 0;
         .nav-brand{
             display: flex;
             .nav-logo{
@@ -17,6 +24,7 @@
                 z-index: 4;
                 border-radius: 200px;
                 position: relative;
+                display: flex;
                 img{
                     max-width: 90%;
                     padding: $padding;

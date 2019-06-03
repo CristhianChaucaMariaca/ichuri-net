@@ -3,6 +3,7 @@
     padding: 0;
     font-family: $font-1;
     font-weight: normal !important;
+    box-sizing: border-box;
 }
 p{
     margin:$margin;
@@ -42,15 +43,20 @@ h3{
 .section{
     padding-left: 100px;
     padding-right: 100px;    
-    i{
-        color:$color-1;
-        display: block;
-        text-align: center;
-    }
-    .section-title{
-        padding: $padding;
-        color:$color-2;
-        font-size: 3em;
+    .title-general{
+        display: flex;
+        justify-content: center;
+        i{
+            color:$color-1;
+            display: block;
+            text-align: center;
+        }
+        .section-title{
+            padding: $padding;
+            color:$color-2;
+            font-size: 3em;
+            
+        }
     }
     .section-article{
         padding: 0 $padding $padding $padding;
