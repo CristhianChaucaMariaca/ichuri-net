@@ -50,7 +50,6 @@
                     }
                     .sucursal-content{
                         padding: $padding;
-                        z-index: 20;
                         position: relative;
                         display: flex;
                         .sucursal-description{
@@ -84,6 +83,9 @@
                                 }
                             }
                         }
+                        #sanfrancisco-icon,#sopocachi-icon,#santacruz-icon{
+                            transition: $transition;
+                        }
                         .sucursal-map{
                             display: none;
                             background-color: rgba($color-3, .8);
@@ -93,7 +95,7 @@
                             overflow: hidden;
                             top:0;
                             left: 0;
-                            z-index: 5000;
+                            z-index: 30;
                             .btn-close{
                                 .icon-cancel-circle{
                                     color:$color-4;

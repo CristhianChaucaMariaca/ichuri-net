@@ -237,7 +237,6 @@ h3 {
 
 .container .body #sucursales .sucursal .sucursal-img .sucursal-content {
   padding: 10px;
-  z-index: 20;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +281,10 @@ h3 {
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1); }
+  .container .body #sucursales .sucursal .sucursal-img .sucursal-content #sanfrancisco-icon, .container .body #sucursales .sucursal .sucursal-img .sucursal-content #sopocachi-icon, .container .body #sucursales .sucursal .sucursal-img .sucursal-content #santacruz-icon {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-map {
     display: none;
     background-color: rgba(0, 0, 0, 0.8);
@@ -291,7 +294,7 @@ h3 {
     overflow: hidden;
     top: 0;
     left: 0;
-    z-index: 5000; }
+    z-index: 30; }
     .container .body #sucursales .sucursal .sucursal-img .sucursal-content .sucursal-map .btn-close .icon-cancel-circle {
       color: white;
       right: 20px;
@@ -331,6 +334,18 @@ h3 {
     width: 100%;
     height: 100%;
     background-color: white; }
+    .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .contenedor-lista, .container .body section.section article.section-article .contenedor-menu .pagina-central .contenedor-lista, .container .body section.section article.section-article .contenedor-menu .pagina-derecha .contenedor-lista {
+      font-size: 11pt;
+      color: #633B00; }
+      .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .contenedor-lista .lista-uno h2, .container .body section.section article.section-article .contenedor-menu .pagina-central .contenedor-lista .lista-uno h2, .container .body section.section article.section-article .contenedor-menu .pagina-derecha .contenedor-lista .lista-uno h2 {
+        font-family: "Montez", cursive;
+        font-size: 20pt;
+        color: #ff6300; }
+      .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .contenedor-lista .lista-uno h4, .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .contenedor-lista .lista-dos h4, .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .contenedor-lista .lista-tres h4, .container .body section.section article.section-article .contenedor-menu .pagina-central .contenedor-lista .lista-uno h4, .container .body section.section article.section-article .contenedor-menu .pagina-central .contenedor-lista .lista-dos h4, .container .body section.section article.section-article .contenedor-menu .pagina-central .contenedor-lista .lista-tres h4, .container .body section.section article.section-article .contenedor-menu .pagina-derecha .contenedor-lista .lista-uno h4, .container .body section.section article.section-article .contenedor-menu .pagina-derecha .contenedor-lista .lista-dos h4, .container .body section.section article.section-article .contenedor-menu .pagina-derecha .contenedor-lista .lista-tres h4 {
+        color: #ff6300; }
+      .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .contenedor-lista .lista-uno ol, .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .contenedor-lista .lista-dos ol, .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .contenedor-lista .lista-tres ol, .container .body section.section article.section-article .contenedor-menu .pagina-central .contenedor-lista .lista-uno ol, .container .body section.section article.section-article .contenedor-menu .pagina-central .contenedor-lista .lista-dos ol, .container .body section.section article.section-article .contenedor-menu .pagina-central .contenedor-lista .lista-tres ol, .container .body section.section article.section-article .contenedor-menu .pagina-derecha .contenedor-lista .lista-uno ol, .container .body section.section article.section-article .contenedor-menu .pagina-derecha .contenedor-lista .lista-dos ol, .container .body section.section article.section-article .contenedor-menu .pagina-derecha .contenedor-lista .lista-tres ol {
+        margin-left: 30px;
+        margin-top: 10px; }
   .container .body section.section article.section-article .contenedor-menu .pagina-izquierda {
     z-index: 10;
     -webkit-transform: rotateY(180deg);
@@ -381,6 +396,16 @@ h3 {
           transform: translateY(5px);
           -webkit-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.3); }
+      .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .delante article {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 10px; }
+        .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .delante article span {
+          color: #ff6300; }
   .container .body section.section article.section-article .contenedor-menu .pagina-izquierda-2 {
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg); }
@@ -464,9 +489,15 @@ h3 {
     background-color: #402700;
     padding: 10px; }
     .container .footer .footer-social .icon {
-      text-align: center; }
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
       .container .footer .footer-social .icon a {
-        color: #633B00;
+        color: #ff6300;
         text-decoration: none;
         font-size: 0.9em;
         margin: 10px;
@@ -475,7 +506,9 @@ h3 {
         -o-transition: 0.3s;
         transition: 0.3s; }
         .container .footer .footer-social .icon a:hover {
-          color: #402700; }
+          -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+          transform: scale(1.3); }
   .container .footer .footer-1 {
     padding: 10px;
     background-color: #633B00;

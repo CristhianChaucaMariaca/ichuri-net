@@ -13,6 +13,29 @@
                         width: 100%;
                         height: 100%;
                         background-color: white;
+                        .contenedor-lista{
+                            font-size: 11pt;
+                            color:$color-2;
+                            .lista-uno{
+                                h2{
+                                    font-family: $font-2;
+                                    font-size: 20pt;
+                                    color:$color-1;
+                                }
+                            }
+                            .lista-uno,.lista-dos,.lista-tres{
+                                h4{
+                                    color:$color-1;
+                                }
+                                ol{
+                                    margin-left: $margin*3;
+                                    margin-top: $margin;
+                                    li{
+
+                                    }
+                                }
+                            }
+                        }
                     }
                     .pagina-izquierda{
                         z-index: 10;
@@ -45,6 +68,14 @@
                                 &:hover{
                                     transform: translateY(5px);
                                     box-shadow: 0px -3px 5px 0px rgba($color-3, .3);
+                                }
+                            }
+                            article{
+                                display: flex; 
+                                justify-content: center;
+                                margin:$margin;
+                                span{
+                                    color:$color-1;
                                 }
                             }
                         }

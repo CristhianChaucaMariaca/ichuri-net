@@ -6,15 +6,17 @@
             padding:$padding;
             .icon{
                 text-align:center;
+                display: flex;
+                justify-content: center;
                 a{
-                    color:$color-2;
+                    color:$color-1;
                     text-decoration:none;
                     font-size:0.9em;
                     margin:$margin;
                     border-radius:50px;
                     transition:$transition;
                     &:hover{
-                        color:$color-2-hover;
+                        transform:scale(1.3);
                     }
                 }
             }
