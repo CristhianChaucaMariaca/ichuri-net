@@ -47,35 +47,37 @@
                         
                         .delante{
                             text-align: center;
-                            background-color: $color-2;
+                            background-color: $color-1;
                             transform: rotateY(180deg);
                             width: 100%;
                             height: 100%;
                             position: absolute;
                             top:0;
                             left: 0;
-                            border: 6px double $color-1;
-                            border-left: none;    
                             button{
                                 width: 200px;
                                 padding: 6px;
                                 background-color: $color-1;
-                                color:$color-4;
-                                border-style: none;
+                                border: solid 1px $color-2;
+                                color:$color-2;
+                                
                                 border-radius: $radius-1;
                                 cursor: pointer;
                                 transition: $transition;
                                 &:hover{
-                                    transform: translateY(5px);
-                                    box-shadow: 0px -3px 5px 0px rgba($color-3, .3);
+                                    transform: scale(1.02);
+                                    color: $color-1;
+                                    background-color: $color-2;
+                                    width: 250px;
                                 }
                             }
                             article{
+                                color:$color-2-hover;
                                 display: flex; 
                                 justify-content: center;
                                 margin:$margin;
                                 span{
-                                    color:$color-1;
+                                    color:$color-2;
                                 }
                             }
                         }
@@ -113,8 +115,7 @@
                         flex-wrap: wrap;
                         justify-content: center;
                         align-items: center;
-                        background-color: $color-2;
-                        border: 6px double $color-1;
+                        background-color: $color-1;
                         border-right: none;
                         color:$color-1;
                         img{

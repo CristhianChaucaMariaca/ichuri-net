@@ -1,0 +1,69 @@
+.container{
+    .body{
+        section.section#contactos{
+            article.section-article{
+                display: flex;
+                article{
+                    width: 50%;
+                }
+                article.form-contact{
+                    padding: $padding;
+                    form{
+                        label{
+                            width: 100%;
+                            display: block;
+                            color:$color-1;
+                            margin-top: 10px;
+                            font-family: $font-2;
+                            font-size: 1.6em;
+                        }
+                        @mixin placeholder {
+                            &::placeholder{
+                                color:rgba($color-1, .3);
+                                font-weight: normal !important;
+                            }
+                        }
+                        input{
+                            width: 100%;
+                            height: 40px;
+                            border-radius: $radius-1;
+                            box-shadow: none;
+                            border:solid 1px $color-1;
+                            border-color: $color-1;
+                            padding: 2%;
+                            @include placeholder;
+                        }
+                        textarea{
+                            width: 100%;
+                            height: 200px;
+                            border-radius: $radius-1;
+                            box-shadow: none;
+                            border-style: solid;
+                            border-color: $color-1;
+                            padding: 2%;
+                            @include placeholder;
+                        }
+                        button{
+                            width: 80%;
+                            height: 40px;
+                            border-radius: $radius-1;
+                            box-shadow: none;
+                            border-style: solid;
+                            background-color: $color-1;
+                            border: none;
+                            color:$color-4;
+                            text-transform: uppercase;
+                            margin:0 auto;
+                            display: block;
+                            transition: $transition;
+                            margin-top: 10px;
+                            &:hover{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

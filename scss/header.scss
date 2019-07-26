@@ -2,6 +2,17 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
+    .link-g{
+        bottom: 100px;
+        position: absolute;
+        a{
+            text-transform: uppercase;
+            &:hover{
+                color: $color-3;
+            }
+        }
+
+    }
     .slider{
         position: relative;
         img{

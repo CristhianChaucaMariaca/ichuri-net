@@ -99,6 +99,27 @@ h3 {
     .section a.link:hover {
       background-color: #2980b9; }
 
+.link-g {
+  width: 100%;
+  z-index: 5; }
+  .link-g a {
+    text-decoration: none;
+    color: #ff6300;
+    border: solid 1px #ff6300;
+    display: block;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .link-g a:hover {
+      background-color: #ff6300;
+      width: 250px; }
+
 .container .nav {
   padding-left: 50px;
   padding-right: 50px;
@@ -127,7 +148,7 @@ h3 {
       display: -ms-flexbox;
       display: flex; }
       .container .nav .nav-brand .nav-logo img {
-        max-width: 90%;
+        max-width: 100%;
         padding: 10px;
         margin: 0 auto; }
     .container .nav .nav-brand .name-brand {
@@ -158,6 +179,13 @@ h3 {
   height: 100vh;
   overflow: hidden;
   position: relative; }
+  .header .link-g {
+    bottom: 100px;
+    position: absolute; }
+    .header .link-g a {
+      text-transform: uppercase; }
+      .header .link-g a:hover {
+        color: black; }
   .header .slider {
     position: relative; }
     .header .slider img {
@@ -278,9 +306,8 @@ h3 {
         background-color: #ff6300;
         color: white;
         cursor: pointer;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); }
+        padding-left: 20px;
+        padding-right: 20px; }
   .container .body #sucursales .sucursal .sucursal-img .sucursal-content #sanfrancisco-icon, .container .body #sucursales .sucursal .sucursal-img .sucursal-content #sopocachi-icon, .container .body #sucursales .sucursal .sucursal-img .sucursal-content #santacruz-icon {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -369,34 +396,34 @@ h3 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 ); }
     .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .delante {
       text-align: center;
-      background-color: #633B00;
+      background-color: #ff6300;
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0;
-      left: 0;
-      border: 6px double #ff6300;
-      border-left: none; }
+      left: 0; }
       .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .delante button {
         width: 200px;
         padding: 6px;
         background-color: #ff6300;
-        color: white;
-        border-style: none;
+        border: solid 1px #633B00;
+        color: #633B00;
         border-radius: 5px;
         cursor: pointer;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
         .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .delante button:hover {
-          -webkit-transform: translateY(5px);
-          -ms-transform: translateY(5px);
-          transform: translateY(5px);
-          -webkit-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.3); }
+          -webkit-transform: scale(1.02);
+          -ms-transform: scale(1.02);
+          transform: scale(1.02);
+          color: #ff6300;
+          background-color: #633B00;
+          width: 250px; }
       .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .delante article {
+        color: #402700;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -405,7 +432,7 @@ h3 {
         justify-content: center;
         margin: 10px; }
         .container .body section.section article.section-article .contenedor-menu .pagina-izquierda .delante article span {
-          color: #ff6300; }
+          color: #633B00; }
   .container .body section.section article.section-article .contenedor-menu .pagina-izquierda-2 {
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg); }
@@ -460,8 +487,7 @@ h3 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #633B00;
-    border: 6px double #ff6300;
+    background-color: #ff6300;
     border-right: none;
     color: #ff6300; }
     .container .body section.section article.section-article .contenedor-menu .pagina-derecha-atras img {
@@ -482,6 +508,83 @@ h3 {
     background: -webkit-gradient(linear, left top, right top, from(white), color-stop(47%, #f6f6f6), to(#ededed));
     background: linear-gradient(to right, white 0%, #f6f6f6 47%, #ededed 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 ); }
+
+.container .body section.section#contactos article.section-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .container .body section.section#contactos article.section-article article {
+    width: 50%; }
+  .container .body section.section#contactos article.section-article article.form-contact {
+    padding: 10px; }
+    .container .body section.section#contactos article.section-article article.form-contact form label {
+      width: 100%;
+      display: block;
+      color: #ff6300;
+      margin-top: 10px;
+      font-family: "Montez", cursive;
+      font-size: 1.6em; }
+    .container .body section.section#contactos article.section-article article.form-contact form input {
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: solid 1px #ff6300;
+      border-color: #ff6300;
+      padding: 2%; }
+      .container .body section.section#contactos article.section-article article.form-contact form input::-webkit-input-placeholder {
+        color: rgba(255, 99, 0, 0.3);
+        font-weight: normal !important; }
+      .container .body section.section#contactos article.section-article article.form-contact form input:-ms-input-placeholder {
+        color: rgba(255, 99, 0, 0.3);
+        font-weight: normal !important; }
+      .container .body section.section#contactos article.section-article article.form-contact form input::-ms-input-placeholder {
+        color: rgba(255, 99, 0, 0.3);
+        font-weight: normal !important; }
+      .container .body section.section#contactos article.section-article article.form-contact form input::placeholder {
+        color: rgba(255, 99, 0, 0.3);
+        font-weight: normal !important; }
+    .container .body section.section#contactos article.section-article article.form-contact form textarea {
+      width: 100%;
+      height: 200px;
+      border-radius: 5px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-style: solid;
+      border-color: #ff6300;
+      padding: 2%; }
+      .container .body section.section#contactos article.section-article article.form-contact form textarea::-webkit-input-placeholder {
+        color: rgba(255, 99, 0, 0.3);
+        font-weight: normal !important; }
+      .container .body section.section#contactos article.section-article article.form-contact form textarea:-ms-input-placeholder {
+        color: rgba(255, 99, 0, 0.3);
+        font-weight: normal !important; }
+      .container .body section.section#contactos article.section-article article.form-contact form textarea::-ms-input-placeholder {
+        color: rgba(255, 99, 0, 0.3);
+        font-weight: normal !important; }
+      .container .body section.section#contactos article.section-article article.form-contact form textarea::placeholder {
+        color: rgba(255, 99, 0, 0.3);
+        font-weight: normal !important; }
+    .container .body section.section#contactos article.section-article article.form-contact form button {
+      width: 80%;
+      height: 40px;
+      border-radius: 5px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-style: solid;
+      background-color: #ff6300;
+      border: none;
+      color: white;
+      text-transform: uppercase;
+      margin: 0 auto;
+      display: block;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      margin-top: 10px; }
+      .container .body section.section#contactos article.section-article article.form-contact form button:hover {
+        width: 100%; }
 
 .container .footer {
   color: #ff6300; }
