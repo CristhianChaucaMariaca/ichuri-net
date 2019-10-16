@@ -3,33 +3,33 @@
         section.section{
             article.section-article{
                 .contenedor-menu{
-                    width: 1000px;
-                    height: 650px;
+                    width: 90%;
                     display: flex;
                     margin:auto;
-                    perspective: 1500px;
                     .pagina-izquierda, .pagina-central, .pagina-derecha{
                         padding: $padding;
                         width: 100%;
                         height: 100%;
-                        background-color: white;
                         .contenedor-lista{
                             font-size: 11pt;
                             color:$color-2;
                             .lista-uno{
                                 h2{
+                                    text-align: left;
                                     font-family: $font-2;
-                                    font-size: 20pt;
+                                    font-size: 40pt;
                                     color:$color-1;
                                 }
                             }
                             .lista-uno,.lista-dos,.lista-tres{
                                 h4{
                                     color:$color-1;
+                                    font-size: 1.3em;
                                 }
                                 ol{
                                     margin-left: $margin*3;
                                     margin-top: $margin;
+                                    font-size: 1.1em;
                                     li{
 
                                     }
@@ -37,100 +37,8 @@
                             }
                         }
                     }
-                    .pagina-izquierda{
-                        z-index: 10;
-                        transform: rotateY(180deg);
-                        transition: all 1s;
-                        transform-origin: right;
-                        transform-style: preserve-3d;
-                        @include fondo-degradado;
-                        
-                        .delante{
-                            text-align: center;
-                            background-color: $color-1;
-                            transform: rotateY(180deg);
-                            width: 100%;
-                            height: 100%;
-                            position: absolute;
-                            top:0;
-                            left: 0;
-                            button{
-                                width: 200px;
-                                padding: 6px;
-                                background-color: $color-1;
-                                border: solid 1px $color-2;
-                                color:$color-2;
-                                
-                                border-radius: $radius-1;
-                                cursor: pointer;
-                                transition: $transition;
-                                &:hover{
-                                    transform: scale(1.02);
-                                    color: $color-1;
-                                    background-color: $color-2;
-                                    width: 250px;
-                                }
-                            }
-                            article{
-                                color:$color-2-hover;
-                                display: flex; 
-                                justify-content: center;
-                                margin:$margin;
-                                span{
-                                    color:$color-2;
-                                }
-                            }
-                        }
-                    }
-                    .pagina-izquierda-2{
-                        transform: rotateY(0deg);
-                    }
-                    .pagina-derecha{
-                        transform: rotateY(-180deg);
-                        transform-origin: left;
-                        transition: all 1s;
-                        transform-style: preserve-3d;
-                        @include fondo-degradado;
-                        .cerrar-menu{
-                            position: absolute;
-                            top:-20px;
-                            right: -20px;
-                            text-align: center;
-                            font-size: 2em;
-                            cursor: pointer;
-                            backface-visibility: hidden;
-                        }
-                    }
-                    .pagina-derecha-2{
-                        transform: rotateY(0deg);
-                    }
-                    .pagina-derecha-atras{
-                        transform: rotateY(180deg);
-                        width: 100%;
-                        height: 100%;
-                        position: absolute;
-                        top:0;
-                        left: 0;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: $color-1;
-                        border-right: none;
-                        color:$color-1;
-                        img{
-                            width: 90%;
-                        }
-                    }
-                    .lado{
-                        backface-visibility: hidden;
-                    }
-                    .lado-2{
-                        backface-visibility: hidden;
-                    }
-                    .pagina-central{
-                        @include fondo-degradado;
-                    }
+                    
+                    
                 }
             }
         }

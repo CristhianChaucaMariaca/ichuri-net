@@ -8,11 +8,13 @@
         a{
             text-transform: uppercase;
             &:hover{
-                color: $color-3;
+                color: $color-4;
+                border:2px solid $color-4;
             }
         }
 
     }
+    
     .slider{
         position: relative;
         img{
@@ -28,28 +30,52 @@
             position: absolute;
             top:0;
             left: 0;
-            z-index: 3;
+            z-index: 1;
         }
         
     }
-    .logo{
+    .contenido-slider{
         position: absolute;
         z-index: 5;
-        // background-color: red;
         margin:auto;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         padding: $padding;
-        
-        img{
-            position: absolute;
-            margin:auto;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
+        .logo{   
+            text-align: center;        
+            img{ 
+            }
+            p{
+                color: white;
+                text-align: center;
+                font-size: 1.2em;
+                font-weight: normal;
+            }
+        }
+        .social{
+            text-align: center;
+            margin-top: $margin*2;
+            display: flex;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                color:$color-1;
+                text-align: center;
+                font-size: 2em;
+                margin:$margin*3;
+                display: block;
+                padding: $padding;
+                transition: 0.3s;
+                border-radius: 10%;
+                &:hover{
+                    color: $color-4;
+                    background-color:$color-1;
+                    border-radius: 50%;
+                    border:2px solid $color-4;
+                }
+            }
         }
     }
 }

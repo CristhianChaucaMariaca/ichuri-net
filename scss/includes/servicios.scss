@@ -1,0 +1,39 @@
+    article.section-article{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .servicio-item{
+            margin-top: $margin;
+            margin-bottom: $margin;
+            padding-bottom: $padding;
+            background-color: $color-4;
+            width: 30%;
+            border-radius: $radius-1;
+            border:1px solid $color-1;
+            @include shadow;
+            .img-servicio-item{
+                overflow: hidden;
+                img{
+                    max-width: 100%;
+                }
+            }
+            h3.title-item{
+                font-weight: normal;
+                // background-color: $color-2;
+                padding-bottom: $padding*2;
+                padding-top: $padding*2;
+                color:$color-2;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            p.parrafo-servicio-item{
+                text-align: justify;
+                color:$color-3;
+            }
+            .btn-servicio-item{
+                text-align: center;
+                a{
+                }
+            }
+        }
+    }

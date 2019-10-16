@@ -1,0 +1,65 @@
+article.section-article{
+    article.section-nosotros{
+        
+        .texto{
+            margin-top: $margin;
+            margin-bottom: $margin;
+            background-color: $color-2;
+            padding: $padding;
+            border-radius: $radius-1*2;
+            h3.title-nosotros{
+                font-family: $font-2;
+                font-size: 2.5em;
+                color:$color-4;
+                padding: $padding*2;
+                text-align: left;
+            }
+            
+            .description-nosotros{
+                border-radius: $radius-1*2;
+                padding: $padding*4;
+                padding-top: $padding*6;
+                font-family: $font-1;
+                font-size: 1em;
+                background-color: $color-1;
+                color:$color-4;
+                margin: $margin;
+                text-align: center;
+                line-height: 200%;
+                position: relative;
+                .img-logo-parrafo{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        // background-color: yellow;
+                        margin-top: $margin*2;
+                        width: 300px;
+                    }
+                }
+                img.isotipo-burbuja{
+                    width:80px;
+                    height: 80px;
+                    background-color: $color-2;
+                    position: absolute;
+                    border-radius: 50%;
+                    left:46%;
+                    top:-45px;
+                    padding: $padding;
+                    border: 3px solid $color-1;
+                }
+                ol{
+                    line-height: 150%;
+                    li{
+                        text-align: left;
+                        font-size: 0.9em;
+                    }
+                }
+                p{
+                    font-family: $font-1;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

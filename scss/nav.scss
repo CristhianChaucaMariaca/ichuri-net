@@ -35,11 +35,13 @@
                 align-self: center;
                 h1{
                     color:$color-1;
-                    text-transform: uppercase;
+                    // text-transform: uppercase;
+                    font-family: $font-2;
+                    font-size: 2em;
                 }
             }
         }
-        .nav-social{
+        .nav-page{
             ul{
                 display: flex;
                 li{
