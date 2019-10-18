@@ -1,0 +1,25 @@
+@import "keyframes.scss";
+.giro-1{
+    animation: giro-1 8s infinite;
+    &:hover{
+        animation-play-state: paused;
+    }
+}
+.giro-2{
+    animation: giro-1 9s infinite;
+    &:hover{
+        animation-play-state: paused;
+    }
+}
+.giro-3{
+    animation: giro-1 10s infinite;
+    &:hover{
+        animation-play-state: paused;
+    }
+}
+.giro-4{
+    animation: giro-1 11s infinite;
+    &:hover{
+        animation-play-state: initial;
+    }
+}

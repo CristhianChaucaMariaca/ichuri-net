@@ -95,3 +95,25 @@ h3{
 .shadow{
     @include shadow;
 }
+.t-shadow-hover{
+    @include t-shadow-hover;
+}
+.social{
+    text-align: center;
+    margin-top: $margin*2;
+    display: flex;
+    justify-content: space-around;
+    a{
+        text-decoration: none;
+        color:$color-1;
+        text-align: center;
+        font-size: 2em;
+        padding: $padding;
+        transition: 0.3s;
+        border-radius: 10%;
+        margin-left: 10%;
+        &:hover{
+            color: $color-4;
+        }
+    }
+}

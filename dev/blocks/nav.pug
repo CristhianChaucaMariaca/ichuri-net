@@ -1,0 +1,15 @@
+nav.nav
+    .nav-brand
+        .nav-logo
+            img(src="media/"+isotipo, alt="", srcset="")
+        .name-brand
+            h1 #{page}
+    .nav-page
+        ul
+            each item in menu
+                li
+                    if item === "Inicio"
+                        a(href="/") #{item}
+                    else
+                        a(href="#") #{item}
+    

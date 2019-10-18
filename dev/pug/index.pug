@@ -1,0 +1,24 @@
+extends ../templates/template
+block header
+    include ../blocks/header.pug
+block video
+    section.section.video
+        .video-title
+            h2 Somos Ichuri
+            .icon-ichuri
+                img(src="media/"+isotipo_ichuri, alt="", srcset="")
+        .video-youtube
+            <iframe src="https://www.youtube.com/embed/hL7A57Ldt24?rel=0&disablekb=0&modestbranding=1&controls=0&amp;autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+block eventos
+    include ../blocks/eventos
+block servicios
+    include ../blocks/servicios
+block sucursales
+    include ../blocks/sucursales
+block menu
+    include ../blocks/menu
+block nosotros
+    include ../blocks/nosotros
+block contacto
+    include ../blocks/contacto
+        

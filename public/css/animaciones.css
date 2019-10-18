@@ -1,0 +1,25 @@
+@-webkit-keyframes giro-1 {
+  0%, 70% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  70%, 80% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  80%, 100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+
+@keyframes giro-1 {
+  0%, 70% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  70%, 80% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  80%, 100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+
+.giro-1 {
+  -webkit-animation: giro-1 3s infinite;
+  animation: giro-1 3s infinite; }

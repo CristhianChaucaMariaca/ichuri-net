@@ -2,18 +2,7 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
-    .link-g{
-        bottom: 100px;
-        position: absolute;
-        a{
-            text-transform: uppercase;
-            &:hover{
-                color: $color-4;
-                border:2px solid $color-4;
-            }
-        }
-
-    }
+    
     
     .slider{
         position: relative;
@@ -45,9 +34,11 @@
         padding: $padding;
         .logo{   
             text-align: center;        
-            img{ 
+            img{
+                max-width: 100%; 
             }
             p{
+                // TODO: Analizar el color del texto del slider
                 color: white;
                 text-align: center;
                 font-size: 1.2em;
@@ -71,11 +62,23 @@
                 border-radius: 10%;
                 &:hover{
                     color: $color-4;
-                    background-color:$color-1;
-                    border-radius: 50%;
-                    border:2px solid $color-4;
+                    // background-color:$color-1;
+                    // border-radius: 50%;
+                    // border:2px solid $color-4;
                 }
             }
         }
+        .link-g{
+            a{
+                @include btn-primary;
+                // text-transform: uppercase;
+                
+                // &:hover{
+                //     color: $color-4;
+                //     border:2px solid $color-4;
+                // }
+            }
+    
+        }        
     }
 }

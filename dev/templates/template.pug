@@ -1,0 +1,34 @@
+doctype html
+html
+    block config
+        include ../config/config
+    block mixin
+        include ../mixins/mixin
+    head
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="fonts/icommon/style.css")
+        link(rel="stylesheet", href="fonts/flaticon/flaticon.css")
+        link(rel="shortcut icon", href="media/"+isotipo, type="image/x-icon")
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+        script(src="js/script.js",type="text/javascript")
+        block head
+            title=page_title + " | " + page
+            each link in css
+                link(rel="stylesheet", href='css/'+link)
+    body
+        .container
+            block nav
+                include ../blocks/nav
+            block header
+            section.body
+                block video
+                block eventos
+                block servicios
+                block sucursales
+                block menu
+                block nosotros
+                block contacto
+            block footer
+                include ../blocks/footer
