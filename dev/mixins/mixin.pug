@@ -1,10 +1,13 @@
 mixin social
     .social
         a(href=facebook, target="_blank").icon-facebook.giro-1
-        a(href="#").icon-whatsapp.giro-2
-        a(href="#").icon-youtube.giro-3
-        a(href="#").icon-mail2.giro-4
+        a(href="https://wa.me/591"+celular+"?text=Me%20gustaría%20obtener%20mas%20información%20del%20restaurante", target="_blank").icon-whatsapp.giro-2
+        a(href="https://www.youtube.com/channel/UCHprEuqZpYrGXybfGRlf9-w",target="_blank").icon-youtube.giro-3
+        a(href="mailto:info@ichuri.net?subject=Interesado%20en%20obtener%20mas%20informacion%20del%20restaurante", target="_blank").icon-mail2.giro-4
 mixin titulo(titulo)
     .title-general
         i(class=attributes.class)
         h2.section-title.title-2 #{titulo}
+mixin enlace(texto,url)
+    .enlace
+        a(href=url)= texto

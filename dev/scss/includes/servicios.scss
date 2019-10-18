@@ -13,8 +13,21 @@
             @include shadow;
             .img-servicio-item{
                 overflow: hidden;
+                position: relative;
+                padding-bottom: 20px;
                 img{
                     max-width: 100%;
+                }
+                img.isotipo{
+                    width: 70px;
+                    height: 60px;
+                    padding: 3px;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 40%;
+                    display: block;
+                    background-color: $color-4;
+                    border-radius: 50%;
                 }
             }
             h3.title-item{

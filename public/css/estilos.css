@@ -77,7 +77,9 @@ h3 {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 10px; }
     .section .title-general i {
       color: #ff6300;
       display: block;
@@ -161,8 +163,9 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   .social a {
     text-decoration: none;
     color: #ff6300;
@@ -173,9 +176,14 @@ h3 {
     -o-transition: 0.3s;
     transition: 0.3s;
     border-radius: 10%;
-    margin-left: 10%; }
+    margin-left: 20px;
+    margin-right: 20px; }
     .social a:hover {
       color: white; }
+
+.enlace {
+  width: 100%;
+  text-align: center; }
 
 .container .nav {
   padding-left: 50px;
@@ -352,7 +360,7 @@ h3 {
       width: 100%;
       height: 600px; }
 
-.container .body #eventos article.section-article .evento-item {
+.container .body .eventos article.section-article .evento-item {
   margin-top: 10px;
   margin-bottom: 40px;
   display: -webkit-box;
@@ -366,29 +374,29 @@ h3 {
   -webkit-box-shadow: 7px 11px 12px -4px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 7px 11px 12px -4px rgba(0, 0, 0, 0.43);
   box-shadow: 7px 11px 12px -4px rgba(0, 0, 0, 0.43); }
-  .container .body #eventos article.section-article .evento-item article.evento {
+  .container .body .eventos article.section-article .evento-item article.evento {
     width: 60%;
     height: 330px;
     background-color: white; }
-    .container .body #eventos article.section-article .evento-item article.evento .evento-title {
+    .container .body .eventos article.section-article .evento-item article.evento .evento-title {
       background-color: #633B00;
       color: #ff6300;
       padding: 10px; }
-      .container .body #eventos article.section-article .evento-item article.evento .evento-title h3 {
+      .container .body .eventos article.section-article .evento-item article.evento .evento-title h3 {
         text-align: center;
         font-family: "Montez", cursive;
         font-size: 2em;
         color: white; }
-    .container .body #eventos article.section-article .evento-item article.evento article.evento-descripcion {
+    .container .body .eventos article.section-article .evento-item article.evento article.evento-descripcion {
       background-color: white;
       padding: 10px; }
-      .container .body #eventos article.section-article .evento-item article.evento article.evento-descripcion p {
+      .container .body .eventos article.section-article .evento-item article.evento article.evento-descripcion p {
         line-height: 170%;
         padding: 10px;
         color: black;
         text-align: justify;
         font-weight: 300; }
-    .container .body #eventos article.section-article .evento-item article.evento .btn-evento {
+    .container .body .eventos article.section-article .evento-item article.evento .btn-evento {
       text-align: left;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -397,7 +405,7 @@ h3 {
       -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
       flex-direction: row-reverse; }
-      .container .body #eventos article.section-article .evento-item article.evento .btn-evento a {
+      .container .body .eventos article.section-article .evento-item article.evento .btn-evento a {
         background-color: #ff6300;
         width: 200px;
         text-align: center;
@@ -410,7 +418,7 @@ h3 {
         -o-transition: 0.2s;
         transition: 0.2s;
         display: block; }
-        .container .body #eventos article.section-article .evento-item article.evento .btn-evento a:hover {
+        .container .body .eventos article.section-article .evento-item article.evento .btn-evento a:hover {
           background-color: #633B00;
           -webkit-transform: scale(1.02);
           -ms-transform: scale(1.02);
@@ -418,12 +426,12 @@ h3 {
           -webkit-box-shadow: 3px 4px 2px 1px rgba(0, 0, 0, 0.27);
           -moz-box-shadow: 3px 4px 2px 1px rgba(0, 0, 0, 0.27);
           box-shadow: 3px 4px 2px 1px rgba(0, 0, 0, 0.27); }
-  .container .body #eventos article.section-article .evento-item .evento-img {
+  .container .body .eventos article.section-article .evento-item .evento-img {
     width: 40%;
     height: 330px;
     overflow: hidden;
     position: relative; }
-    .container .body #eventos article.section-article .evento-item .evento-img .icon-ichuri {
+    .container .body .eventos article.section-article .evento-item .evento-img .icon-ichuri {
       position: absolute;
       background-color: #633B00;
       width: 70px;
@@ -447,7 +455,7 @@ h3 {
       border: 3px solid #ff6300;
       -webkit-animation: giro-infinito infinite 5s;
       animation: giro-infinito infinite 5s; }
-      .container .body #eventos article.section-article .evento-item .evento-img .icon-ichuri img {
+      .container .body .eventos article.section-article .evento-item .evento-img .icon-ichuri img {
         max-width: 80%;
         max-height: 70%; }
 
@@ -466,7 +474,7 @@ h3 {
   to {
     -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg); } }
-    .container .body #eventos article.section-article .evento-item .evento-img img {
+    .container .body .eventos article.section-article .evento-item .evento-img img {
       max-width: 100%; }
 
 .container .body #nosotros article.section-article article.section-nosotros .texto {
@@ -698,9 +706,21 @@ h3 {
     -moz-box-shadow: 7px 11px 12px -4px rgba(0, 0, 0, 0.43);
     box-shadow: 7px 11px 12px -4px rgba(0, 0, 0, 0.43); }
     .container .body #servicios article.section-article .servicio-item .img-servicio-item {
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 20px; }
       .container .body #servicios article.section-article .servicio-item .img-servicio-item img {
         max-width: 100%; }
+      .container .body #servicios article.section-article .servicio-item .img-servicio-item img.isotipo {
+        width: 70px;
+        height: 60px;
+        padding: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 40%;
+        display: block;
+        background-color: white;
+        border-radius: 50%; }
     .container .body #servicios article.section-article .servicio-item h3.title-item {
       font-weight: normal;
       padding-bottom: 10px;
