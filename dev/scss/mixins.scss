@@ -28,6 +28,7 @@
         -webkit-box-shadow: 3px 4px 2px 1px rgba(0,0,0,0.27);
         -moz-box-shadow: 3px 4px 2px 1px rgba(0,0,0,0.27);
         box-shadow: 3px 4px 2px 1px rgba(0,0,0,0.27);
+        border:1px solid $color-1;
     }
 }
 @mixin btn-s {

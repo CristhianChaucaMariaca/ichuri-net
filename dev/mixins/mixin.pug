@@ -11,3 +11,32 @@ mixin titulo(titulo)
 mixin enlace(texto,url)
     .enlace
         a(href=url)= texto
+
+
+mixin eventos_recientes
+    -var cont=3;
+    each evento, index in eventos
+            if index < cont
+                +evento(evento.title, evento.description,evento.link,evento.img)
+mixin evento(titulo, descripcion, enlace,imagen)
+    .evento-item
+        article.evento
+            .evento-title
+                h3 #{titulo}
+            article.evento-descripcion
+                p #{descripcion}
+            .btn-evento
+                a(href="eventos/"+enlace) Ver Evento
+        .evento-img
+            .icon-ichuri
+                img(src="media/"+isotipo, alt="", srcset="")
+            img(src="media/eventos/"+imagen, alt="", srcset="")
+mixin servicio(img,title,description,link)
+    .servicio-item 
+        .img-servicio-item
+            img(src="media/header/"+img, alt="")
+            img(src="media/"+isotipo).isotipo
+        h3.title-item #{title}
+        p.parrafo-servicio-item #{description}
+        .btn-servicio-item
+            a(href="servicios/"+link).btn-primary Ver #{title}
