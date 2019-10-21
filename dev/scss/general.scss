@@ -121,9 +121,17 @@ h3{
     }
 }
 .enlace{
-    width: 100%;
     text-align: center;
+    span{
+        color:$color-2;
+    }
     a{
-        // TODO: Modificar la apariencia para ver lo eventos pasados
+      color:$color-1; 
+      transition:$transition;
+      &:hover{
+          color:$color-2;
+          text-decoration: none;
+          font-weight: normal;
+      } 
     }
 }

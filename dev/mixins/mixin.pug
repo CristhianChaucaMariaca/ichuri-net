@@ -10,6 +10,7 @@ mixin titulo(titulo)
         h2.section-title.title-2 #{titulo}
 mixin enlace(texto,url)
     .enlace
+        span.icon-link  
         a(href=url)= texto
 
 
@@ -29,8 +30,8 @@ mixin evento(titulo, descripcion, enlace,imagen)
                 a(href="eventos/"+enlace) Ver Evento
         .evento-img
             .icon-ichuri
-                img(src="media/"+isotipo, alt="", srcset="")
-            img(src="media/eventos/"+imagen, alt="", srcset="")
+                img(src=backlink+"media/"+isotipo, alt="", srcset="")
+            img(src=backlink+"media/eventos/"+imagen, alt="", srcset="")
 mixin servicio(img,title,description,link)
     .servicio-item 
         .img-servicio-item
@@ -40,3 +41,5 @@ mixin servicio(img,title,description,link)
         p.parrafo-servicio-item #{description}
         .btn-servicio-item
             a(href="servicios/"+link).btn-primary Ver #{title}
+
+    

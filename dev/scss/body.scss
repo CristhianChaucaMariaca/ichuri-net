@@ -29,6 +29,20 @@
                 }
             }
         }
+        .container-body{
+            display: flex;
+            // margin-top: $margin*4;
+            .content{
+                flex-grow: 1;
+            }
+            aside{
+                margin-left: $margin*2;
+                .fb{
+                    
+                }
+            }
+        }
+        @import "includes/evento.scss";
         .eventos{
             @import "includes/eventos.scss";
         }

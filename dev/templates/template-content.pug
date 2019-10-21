@@ -23,14 +23,12 @@ html(lang="es")
                 include ../blocks/nav
             block header
             section.body
-                block video
-                block eventos
-                block servicios
-                block sucursales
-                block menu
-                block nosotros
-                block contacto
-
-                block lista_eventos
+                section.section
+                    .container-body
+                        section.content
+                            block content
+                        aside
+                            block aside
+                                include ../blocks/aside
             block footer
                 include ../blocks/footer

@@ -40,21 +40,6 @@ article.section-article{
                 flex-direction: row-reverse;
                 a{
                     @include btn-primary;
-                    // background-color: $color-1;
-                    // color:$color-4;
-                    // padding: $padding;
-                    // margin-right: $margin*2;
-                    // text-decoration: none;
-                    // border-radius: $radius-1;
-                    // width: 150px;  
-                    // text-align: center;
-                    // position: relative;
-                    // transition: 0.5s;
-                    // font-family: $font-1;
-                    // &:hover{
-                    //     background-color: $color-2;
-                    //     transform: scale(1.02);
-                    // }
                 }
             }
         }

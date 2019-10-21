@@ -4,7 +4,7 @@
   display: grid;
   -ms-grid-columns: 1fr 4fr 1fr;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-areas: "nav nav nav" "header header header" "body body body" "footer footer footer"; }
+  grid-template-areas: "nav nav nav" "header header header" "body body body" "footer footer footer"; }
   .container .nav {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -183,8 +183,18 @@ h3 {
       color: white; }
 
 .enlace {
-  width: 100%;
   text-align: center; }
+  .enlace span {
+    color: #633B00; }
+  .enlace a {
+    color: #ff6300;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .enlace a:hover {
+      color: #633B00;
+      text-decoration: none;
+      font-weight: normal; }
 
 .container .nav {
   padding-left: 50px;
@@ -361,6 +371,39 @@ h3 {
     .container .body .video .video-youtube iframe {
       width: 100%;
       height: 600px; }
+
+.container .body .container-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .container .body .container-body .content {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+  .container .body .container-body aside {
+    margin-left: 20px; }
+
+.container .body .evento .evento-title {
+  background-color: #633B00; }
+  .container .body .evento .evento-title h2 {
+    font-family: "Montez", cursive;
+    font-size: 2em;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.container .body .evento .evento-img-primary {
+  height: 400px;
+  overflow: hidden;
+  position: relative; }
+  .container .body .evento .evento-img-primary img {
+    max-width: 100%;
+    width: 100%;
+    position: absolute; }
+
+.container .body .evento .evento-description {
+  padding-bottom: 10px;
+  padding-top: 10px; }
 
 .container .body .eventos article.section-article .evento-item {
   margin-top: 10px;
