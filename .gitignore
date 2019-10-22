@@ -1,2 +1,2 @@
 # .gitignore para archivos no deceados en el repositorio
-prepros-6.config
+*.config
