@@ -1,8 +1,10 @@
 .container{
+    overflow: hidden;
     .body{
         section.section#contactos{
             article.section-article{
                 display: flex;
+                flex-wrap: wrap;
                 article{
                     width: 50%;
                 }
