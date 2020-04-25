@@ -48,7 +48,9 @@ h3 {
   text-align: center; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 .hr {
   width: 60%;
@@ -199,6 +201,23 @@ img {
       color: #633B00;
       text-decoration: none;
       font-weight: normal; }
+
+body .icon-menu {
+  position: fixed;
+  color: white;
+  z-index: 20;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ff6300;
+  border-radius: 100%;
+  font-size: 2em;
+  -webkit-box-shadow: 7px 11px 12px -4px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 7px 11px 12px -4px rgba(0, 0, 0, 0.43);
+  box-shadow: 7px 11px 12px -4px rgba(0, 0, 0, 0.43);
+  display: none; }
 
 .container .nav {
   padding-left: 50px;
@@ -503,7 +522,6 @@ img {
       align-self: center;
       right: 0px;
       bottom: 0px;
-      z-index: 20;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -997,10 +1015,45 @@ img {
     animation-play-state: initial; }
 
 @media only screen and (max-width: 780px) {
+  body .icon-menu {
+    display: block; }
   .container {
     width: 100% !important; }
+    .container nav .mostrar-nav {
+      -webkit-transform: translateX(0vw) !important;
+      -ms-transform: translateX(0vw) !important;
+      transform: translateX(0vw) !important; }
     .container nav .nav-page {
-      display: none; }
+      -webkit-transform: translateX(-50vw);
+      -ms-transform: translateX(-50vw);
+      transform: translateX(-50vw);
+      position: fixed;
+      background-color: #ff6300;
+      height: 100vh;
+      width: 50vw;
+      left: 0px;
+      top: 0px;
+      z-index: 20;
+      opacity: .9;
+      -webkit-transition: -webkit-transform .4s;
+      transition: -webkit-transform .4s;
+      -o-transition: transform .4s;
+      transition: transform .4s;
+      transition: transform .4s, -webkit-transform .4s; }
+      .container nav .nav-page ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: right; }
+        .container nav .nav-page ul li {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-bottom: 1px solid white; }
+          .container nav .nav-page ul li a {
+            margin-right: 15px;
+            color: white !important;
+            font-weight: 400 !important; }
     .container .body .section {
       padding-left: 10px;
       padding-right: 10px;
