@@ -1,13 +1,44 @@
 @media only screen and (max-width:780px){
+    body{
+        .icon-menu{
+            display: block;
+        }
+    }
     .container{
         width: 100% !important;
         nav{
             .nav-brand{
 
             }
+            .mostrar-nav{
+                transform: translateX(0vw) !important;
+            }
             .nav-page{
-                // TODO: modificar el menú de navegación para vista en moviles
-                display: none; 
+                transform: translateX(-50vw);
+                position: fixed;
+                background-color: $color-1;
+                height: 100vh;
+                width: 50vw;
+                left: 0px;
+                top: 0px;
+                z-index: 20;
+                opacity: .9;
+                transition: transform .4s;
+                ul{
+                    flex-direction: column;
+                    text-align: right;
+                    li{
+                        // background-color: red;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid $color-4;
+                        a{
+                            margin-right: 15px;
+                            color:$color-4 !important;
+                            font-weight: 400 !important;
+                        }
+                    }
+                }
             }
         }
         header.header{
