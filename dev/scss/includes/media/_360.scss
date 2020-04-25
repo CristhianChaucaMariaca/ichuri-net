@@ -1,0 +1,24 @@
+@media only screen and(max-width:360px){
+    .container{
+        .body{
+            .section{
+                .section-article{
+                    .evento-item{
+                        .evento-img{
+                            height: auto !important;
+                        }
+                        .evento{
+                            height: auto !important;
+                            .btn-evento{
+                                margin:15px 0;
+                            }
+                        }
+                    }
+                    .form-contact{
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}

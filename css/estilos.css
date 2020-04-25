@@ -47,6 +47,9 @@ h2 {
 h3 {
   text-align: center; }
 
+img {
+  max-width: 100%; }
+
 .hr {
   width: 60%;
   margin: 20px auto;
@@ -1075,3 +1078,13 @@ h3 {
         order: 1; }
         .container footer footer.footer-1 .footer-rigth .img-logo-footer {
           margin: auto; } }
+
+@media only screen and (max-width: 360px) {
+  .container .body .section .section-article .evento-item .evento-img {
+    height: auto !important; }
+  .container .body .section .section-article .evento-item .evento {
+    height: auto !important; }
+    .container .body .section .section-article .evento-item .evento .btn-evento {
+      margin: 15px 0; }
+  .container .body .section .section-article .form-contact {
+    width: 100% !important; } }
