@@ -1,5 +1,16 @@
 @media only screen and(max-width:360px){
     .container{
+        nav.nav{
+            justify-content: center;
+            .nav-brand{
+                .nav-logo{
+                    display: none !important;
+                }
+                .nav-brand{
+                    
+                }
+            }
+        }
         .body{
             .section{
                 .section-article{
@@ -14,8 +25,21 @@
                             }
                         }
                     }
+                    .servicio-item{
+                        img.isotipo{
+                            left: 35% !important;
+                        }
+                    }
                     .form-contact{
                         width: 100% !important;
+                    }
+                    .sucursal{
+                        .sucursal-img{
+                            .sucursal-content{
+                                padding: 0px !important;
+                                margin-bottom: 20px;
+                            }
+                        }
                     }
                 }
             }

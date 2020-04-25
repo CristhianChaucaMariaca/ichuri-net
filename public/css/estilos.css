@@ -1025,10 +1025,6 @@ img {
           padding: 10px !important;
           bottom: -10px !important;
           left: 43% !important; }
-        .container .body .section .section-article .servicio-item h3.title-item {
-          font-size: 1.7em !important; }
-        .container .body .section .section-article .servicio-item p.parrafo-servicio-item {
-          font-size: 1.3em !important; }
       .container .body .section .section-article .sucursal {
         -webkit-box-shadow: none !important;
         box-shadow: none !important; }
@@ -1080,11 +1076,22 @@ img {
           margin: auto; } }
 
 @media only screen and (max-width: 360px) {
+  .container nav.nav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .container nav.nav .nav-brand .nav-logo {
+      display: none !important; }
   .container .body .section .section-article .evento-item .evento-img {
     height: auto !important; }
   .container .body .section .section-article .evento-item .evento {
     height: auto !important; }
     .container .body .section .section-article .evento-item .evento .btn-evento {
       margin: 15px 0; }
+  .container .body .section .section-article .servicio-item img.isotipo {
+    left: 35% !important; }
   .container .body .section .section-article .form-contact {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .container .body .section .section-article .sucursal .sucursal-img .sucursal-content {
+    padding: 0px !important;
+    margin-bottom: 20px; } }
