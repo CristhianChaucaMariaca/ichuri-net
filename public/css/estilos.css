@@ -522,7 +522,6 @@ body .icon-menu {
       align-self: center;
       right: 0px;
       bottom: 0px;
-      z-index: 20;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
