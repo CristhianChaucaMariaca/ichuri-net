@@ -1,0 +1,70 @@
+@media only screen and(max-width:450px){
+    .container{
+        nav.nav{
+            justify-content: center;
+            .nav-brand{
+                .nav-logo{
+                    display: none !important;
+                }
+                .nav-brand{
+                    
+                }
+            }
+        }
+        .body{
+            .section{
+                .section-article{
+                    .section-nosotros{
+                        .texto{
+                            .description-nosotros{
+                                .isotipo-burbuja{
+                                    left: 38% !important;
+                                    top: -25px !important;
+                                    width: 60px !important;
+                                    height: 60px !important;
+                                }
+                            }
+                        }
+                    }
+                    .evento-item{
+                        .evento-img{
+                            height: auto !important;
+                        }
+                        .evento{
+                            height: auto !important;
+                            .btn-evento{
+                                margin:15px 0;
+                            }
+                        }
+                    }
+                    .servicio-item{
+                        img.isotipo{
+                            left: 35% !important;
+                        }
+                    }
+                    .form-contact{
+                        width: 100% !important;
+                    }
+                    .sucursal{
+                        .sucursal-img{
+                            .sucursal-content{
+                                padding: 0px !important;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer.footer{
+            .footer-social{
+                .social{
+                    margin-top: 0px !important;
+                    a{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}

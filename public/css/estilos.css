@@ -47,6 +47,9 @@ h2 {
 h3 {
   text-align: center; }
 
+img {
+  max-width: 100%; }
+
 .hr {
   width: 60%;
   margin: 20px auto;
@@ -1022,10 +1025,6 @@ h3 {
           padding: 10px !important;
           bottom: -10px !important;
           left: 43% !important; }
-        .container .body .section .section-article .servicio-item h3.title-item {
-          font-size: 1.7em !important; }
-        .container .body .section .section-article .servicio-item p.parrafo-servicio-item {
-          font-size: 1.3em !important; }
       .container .body .section .section-article .sucursal {
         -webkit-box-shadow: none !important;
         box-shadow: none !important; }
@@ -1075,3 +1074,33 @@ h3 {
         order: 1; }
         .container footer footer.footer-1 .footer-rigth .img-logo-footer {
           margin: auto; } }
+
+@media only screen and (max-width: 450px) {
+  .container nav.nav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .container nav.nav .nav-brand .nav-logo {
+      display: none !important; }
+  .container .body .section .section-article .section-nosotros .texto .description-nosotros .isotipo-burbuja {
+    left: 38% !important;
+    top: -25px !important;
+    width: 60px !important;
+    height: 60px !important; }
+  .container .body .section .section-article .evento-item .evento-img {
+    height: auto !important; }
+  .container .body .section .section-article .evento-item .evento {
+    height: auto !important; }
+    .container .body .section .section-article .evento-item .evento .btn-evento {
+      margin: 15px 0; }
+  .container .body .section .section-article .servicio-item img.isotipo {
+    left: 35% !important; }
+  .container .body .section .section-article .form-contact {
+    width: 100% !important; }
+  .container .body .section .section-article .sucursal .sucursal-img .sucursal-content {
+    padding: 0px !important;
+    margin-bottom: 20px; }
+  .container footer.footer .footer-social .social {
+    margin-top: 0px !important; }
+    .container footer.footer .footer-social .social a {
+      font-size: 1.2em; } }
