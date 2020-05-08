@@ -14,11 +14,11 @@
                 transform: translateX(0vw) !important;
             }
             .nav-page{
-                transform: translateX(-50vw);
+                transform: translateX(-70vw);
                 position: fixed;
                 background-color: $color-1;
                 height: 100vh;
-                width: 50vw;
+                width: 70vw;
                 left: 0px;
                 top: 0px;
                 z-index: 20;
@@ -33,9 +33,10 @@
                         padding-bottom: 15px;
                         border-bottom: 1px solid $color-4;
                         a{
-                            margin-right: 15px;
+                            margin-right: 50px;
                             color:$color-4 !important;
-                            font-weight: 400 !important;
+                            font-weight: 900 !important;
+                            font-size: 1.3em;
                         }
                     }
                 }

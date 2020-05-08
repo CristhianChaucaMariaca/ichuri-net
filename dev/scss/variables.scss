@@ -20,7 +20,10 @@ $transition:0.3s;
 // FUENTES
 @import url(https://fonts.googleapis.com/css?family=Montez|Roboto:300,400,900&display=swap);
 $font-1:'Roboto', sans-serif;
-$font-2: 'Montez', cursive;
+$font-3: 'Montez', cursive;
+/* Fuente 3 */
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap);
+$font-2: 'Dancing Script', cursive;
 
 // RADIUS
 $radius-1:5px;

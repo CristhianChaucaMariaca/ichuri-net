@@ -41,11 +41,11 @@
                 max-width: 100%; 
             }
             p{
-                // TODO: Analizar el color del texto del slider
-                color: white;
+                color: $color-1;
+                font-family: $font-2;
                 text-align: center;
-                font-size: 1.2em;
-                font-weight: normal;
+                font-size: 2em;
+                font-weight: 400;
             }
         }
         .social{
@@ -57,7 +57,7 @@
                 text-decoration: none;
                 color:$color-1;
                 text-align: center;
-                font-size: 2em;
+                font-size: 1.5em;
                 margin:$margin*3;
                 display: block;
                 padding: $padding;
@@ -73,7 +73,6 @@
         }
         .link-g{
             a{
-                @include btn-primary;
                 // text-transform: uppercase;
                 
                 // &:hover{

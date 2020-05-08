@@ -13,12 +13,14 @@
             .footer-left{
                 width: 70%;
                 p{
-
+                    text-align: left;
                     &:first-child{
                         font-weight: normal;    
                     }
                     span{
                         color:$color-1;
+                        font-size: 1em !important;
+                        margin-right: 10px;
                     }
                 }
             }
@@ -37,7 +39,8 @@
         }
         .copyrigth{
             text-align: center;
-            padding: $padding;
+            padding-top: 30px;
+            padding-bottom: 30px;
             color: $color-1;
             background-color: $color-2-hover;
             span{
