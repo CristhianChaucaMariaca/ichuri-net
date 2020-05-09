@@ -4,6 +4,8 @@ block append config
 block lista_eventos
     section.section.eventos
         +titulo('Eventos')(class="flaticon-cake")
+        .hr
+            .icon.flaticon-champagne-glass
         article.section-article 
             each evento in eventos
                 +evento(evento.title, evento.description,evento.link,evento.img)

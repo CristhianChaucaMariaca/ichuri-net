@@ -30,15 +30,18 @@
             }
         }
         .container-body{
-            display: flex;
-            // margin-top: $margin*4;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-areas:  "contenido aside";
+            column-gap: 20px;
             .content{
-                flex-grow: 1;
+                flex-shrink: 3 !important;
+                grid-area: contenido;
             }
             aside{
-                margin-left: $margin*2;
+                flex-shrink: 1 !important;
+                grid-area: aside;
                 .fb{
-                    
                 }
             }
         }

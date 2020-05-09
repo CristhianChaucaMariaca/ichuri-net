@@ -21,9 +21,9 @@ body{
         padding-right: 50px;
         background-color: $color-2;
         padding-top: 10px;
-        height: 60px;
+        height: 70px;
         display: flex;
-        border-bottom: 2px solid $color-1;
+        border-bottom: 3px solid $color-1;
         justify-content: space-between;
         .nav-brand{
             display: flex;
@@ -63,14 +63,37 @@ body{
                         text-decoration: none;
                         color:$color-1;
                         transition: $transition;
+                        position: relative;
+                        z-index: 200;
                         &:hover{
                             color:$color-4;
-                            // text-decoration: underline;
                             text-decoration-color: $color-4; 
-                            transform:scale(1.03);
-                            @include t-shadow-hover;
                             display: block;
                         }
+                        &:hover span{
+                            z-index: 200;
+                            opacity: 1;
+                            display: block;
+                            transform: scale(1) translateX(-50%);
+                        }
+                        span{
+                            opacity: 0;
+                            position: absolute;
+                            background-color: $color-2;
+                            color:$color-1;
+                            display: none;
+                            font-size: 2em;
+                            border-radius: 100%;
+                            width: 60px;
+                            height: 60px;
+                            text-align: center;
+                            line-height: 1.5;
+                            left: 50%;
+                            transform: scale(0) translateX(-50%);
+                            border:3px solid $color-1;
+                            margin-top: 5px;
+                        }
+                        
                     }
                 }
             }

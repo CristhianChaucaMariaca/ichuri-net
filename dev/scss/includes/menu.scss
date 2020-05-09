@@ -4,42 +4,100 @@
         section.section{
             article.section-article{
                 .contenedor-menu{
-                    width: 90%;
+                    width: 100%;
                     display: flex;
                     flex-wrap: wrap;
+                    justify-content: center;
+                    perspective: 2000px;
                     margin:auto;
-                    justify-content: space-between;
                     .contenedor-lista{
                         font-size: 11pt;
                         height: auto;
                         color:$color-2;
                         width: 300px;
-
-                        // margin-left: 20px;
-                        // margin-right: 20px;
+                        min-width: 100px;
+                        max-width: 270px;
+                        padding: 15px;
                         .lista{
                             h2{
-                                text-align: left;
+                                text-align: center;
                                 font-family: $font-2;
-                                font-size: 40pt;
                                 color:$color-1;
+                                i{
+                                    font-size: 3em;
+                                    width: 100%;
+                                    display: block;
+                                    opacity: .5;
+                                }
                             }
                             h4{
-                                color:$color-1;
+                                color:$color-2;
+                                font-weight: 500;
                                 font-size: 1.3em;
+                                opacity: .8;
                             }
-                            ol{
-                                margin-left: $margin*3;
-                                margin-top: $margin;
-                                font-size: 1.1em;
-                                li{
-
+                            .platos{
+                                display: flex;
+                                flex-direction: column;
+                                span{
+                                    i{
+                                        opacity: 0;
+                                        color:$color-1;
+                                        margin-right: 5px;
+                                    }
                                 }
+                            }
+                            &:hover .platos span i{
+                                opacity: .7;
+                                transition: opacity .3s;
                             }
                         }
                     }
+                    @mixin menu {
+                        transition: .5s;
+                        position: relative;
+                        backface-visibility: hidden;
+                        // transform: rotateY(175deg);
+                        transform-style: preserve-3d;
+                        transform-origin: right;
+                    }
+                    @mixin color-menu{
+                        background: rgba(250,250,250,1);
+                        background: -moz-linear-gradient(left, rgba(250,250,250,1) 0%, rgba(240,240,240,1) 59%, rgba(232,232,232,1) 100%);
+                        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(250,250,250,1)), color-stop(59%, rgba(240,240,240,1)), color-stop(100%, rgba(232,232,232,1)));
+                        background: -webkit-linear-gradient(left, rgba(250,250,250,1) 0%, rgba(240,240,240,1) 59%, rgba(232,232,232,1) 100%);
+                        background: -o-linear-gradient(left, rgba(250,250,250,1) 0%, rgba(240,240,240,1) 59%, rgba(232,232,232,1) 100%);
+                        background: -ms-linear-gradient(left, rgba(250,250,250,1) 0%, rgba(240,240,240,1) 59%, rgba(232,232,232,1) 100%);
+                        background: linear-gradient(to right, rgba(250,250,250,1) 0%, rgba(240,240,240,1) 59%, rgba(232,232,232,1) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e8e8e8', GradientType=1 );
+                    }
+                    #derecha{
+                        @include menu;
+                        @include color-menu;
+                    }
+                    #izquierda{
+                        @include menu;
+                        @include color-menu;
+                        &:after{
+                            content: "";
+                            background-color: $color-1;
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            transform:rotateY(180deg);
+                            backface-visibility: hidden;
+                        }
+                    }
                     
-                    
+                    #centro-r{
+                        @include color-menu;
+                    }    
+                    #centro-l{
+                        @include color-menu;
+                    }           
                 }
             }
         }

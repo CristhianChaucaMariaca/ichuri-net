@@ -43,7 +43,8 @@ article.section-article{
                     background-color: $color-2;
                     position: absolute;
                     border-radius: 50%;
-                    left:46%;
+                    left:50%;
+                    transform:translate(-50%);
                     top:-45px;
                     padding: $padding;
                     border: 3px solid $color-1;
@@ -58,6 +59,7 @@ article.section-article{
                 p{
                     font-family: $font-1;
                     text-align: left;
+                    margin-bottom: 30px;
                 }
             }
         }

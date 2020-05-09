@@ -22,12 +22,13 @@ img{
     object-fit: cover;
 }
 .hr{
-    width: 60%;
-    margin: $margin*2 auto;
+    width: 90%;
+    margin: 50px auto;
     height: 1px;
-    background-color: $color-2;
+    background-color: $color-1;
     position: relative;
     display: block;
+    opacity: .2;
     .icon{
         position: absolute;
         display: block;
@@ -36,8 +37,9 @@ img{
         color:$color-1;
         background-color: $color-4;
         font-size: 1.2em;
-        margin-left: 50%;
+        left: 50%;
         top:-10px;
+        transform: translateX(-50%);
     }
 }
 .title-3{
@@ -57,6 +59,7 @@ img{
             display: block;
             text-align: center;
             font-size: 64px;
+            opacity: .5;
         }
         .section-title{
             padding: $padding;
