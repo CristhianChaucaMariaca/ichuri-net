@@ -11,6 +11,33 @@
                 }
             }
         }
+        .header{
+            .slider{
+                height: 100vh;
+                img{
+                    height: 100vh;
+                }
+            }
+            .contenido-slider{
+                .logo{
+                    img{
+                        width: 40%;
+                    }
+                    p{
+                        font-size: 1.2em;
+                    }
+                }
+                .social {
+                    margin-top: 5px;
+                    a{
+                        margin:5px;
+                    }
+                }
+                p{
+                    font-size: 1em  ;
+                }
+            }
+        }
         .body{
             .section{
                 .section-article{

@@ -6,16 +6,7 @@ html(lang="es")
         include ../mixins/mixin
     head
         block head
-            title=page_title + " | " + page
-            each link in css
-                link(rel="stylesheet", href=backlink+'css/'+link)
-            meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
-            meta(name="viewport", content="width=device-width, initial-scale=1.0")
-            meta(http-equiv="X-UA-Compatible", content="ie=edge")
-            link(rel="stylesheet", href=backlink+"fonts/icommon/style.css")
-            link(rel="stylesheet", href=backlink+"fonts/flaticon/flaticon.css")
-            link(rel="shortcut icon", href=backlink+"media/"+isotipo, type="image/x-icon")
-            //- script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+            include ../config/head
     body
         .container
             block nav

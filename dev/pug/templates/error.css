@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #ffdfcc;
+}
+.container{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.error{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.error span{
+    font-size: 5em;
+    color:red;
+    animation: rotar 1s infinite;
+    display: block;
+}
+.error_titulo{
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.error_descripcion{
+    font-size: 1em;
+}
+img{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.error_img{
+    max-width: 100px;
+    min-width: 50px;
+}
+/* TODO: Revisar por que no funciona el codigo de animación */
+@keyframes rotar{
+    from{
+       transform: rotateY(0deg);
+    }
+    to{
+       transform: rotateY(360deg);
+    }   
+}

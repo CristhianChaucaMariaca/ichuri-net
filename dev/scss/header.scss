@@ -35,6 +35,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        p{
+            color:$color-4;
+            font-size: 2em;
+        }
         .logo{   
             text-align: center;        
             img{

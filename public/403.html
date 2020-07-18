@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Error - Ichuri Coffee</title>
+    <link rel="stylesheet" href="/fonts/icommon/style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez|Roboto:300,400,900&amp;display=swap"/>
+    <style>*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #ffdfcc;
+}
+.container{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.error{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.error span{
+    font-size: 5em;
+    color:red;
+    animation: rotar 1s infinite;
+    display: block;
+}
+.error_titulo{
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.error_descripcion{
+    font-size: 1em;
+}
+img{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.error_img{
+    max-width: 100px;
+    min-width: 50px;
+}
+/* TODO: Revisar por que no funciona el codigo de animación */
+@keyframes rotar{
+    from{
+       transform: rotateY(0deg);
+    }
+    to{
+       transform: rotateY(360deg);
+    }   
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="error"><span class="icon-notification"></span>
+        <h3 class="error_titulo">Error 403</h3>
+        <p class="error_description">Usted no tiene permiso para acceder a la carpeta solicitada...!</p><img class="error_img" src="/media/isotipo-naranja-chef.png" alt="Logo"/>
+      </div>
+    </div>
+  </body>
+</html>

@@ -10,8 +10,9 @@
             background-color: $color-2;
             text-align: center;
             display: flex;
+            justify-content: space-between;
             .footer-left{
-                width: 70%;
+                width: 50%;
                 p{
                     text-align: left;
                     &:first-child{

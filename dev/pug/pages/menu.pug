@@ -1,4 +1,15 @@
 extends ../templates/template
 
+//- Configuración de la pagina
+block append config
+    -page_title = "Menu"
+//- End Configuración de la pagina
+
+//- Configuración de Header
+block prepend head
+    -keywords = "Desayunos, Almuerzos, Cafeteria, Bebidas"
+    -description = "Conoce nuestro menu, y deleitate con nuestros platillos, bebidas y cafatería donde encontras aormas y sabores que solo encontraras en nuestros restaurantes"
+//- End Configuración de Header
+
 block menu
     include ../blocks/menu

@@ -1,2 +1,3 @@
 # .gitignore para archivos no deceados en el repositorio
 *.config
+dev/html
