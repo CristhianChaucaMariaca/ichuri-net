@@ -1,6 +1,6 @@
-mixin error(tipo, descripcion)
+mixin notification(tipo, descripcion)
     .error
         span(class=attributes.class)
-        h3.error_titulo Error #{tipo}
+        h3.error_titulo #{tipo}
         p.error_description #{descripcion}
         img(src="/media/isotipo-naranja-chef.png", alt="Logo").error_img

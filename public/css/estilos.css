@@ -927,8 +927,11 @@ body .icon-menu {
   width: 50%;
 }
 .container .body section.section#contactos article.section-article article.form-contact {
-  padding: 10px;
+  background-color: white;
+  padding: 20px;
   font-size: 11pt;
+  box-shadow: 3px 0px 13px rgba(163, 163, 163, 0.4);
+  border-radius: 5px;
 }
 .container .body section.section#contactos article.section-article article.form-contact h3 {
   font-size: 2em;

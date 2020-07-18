@@ -11,8 +11,8 @@ section.section#contactos.color-dark
 
         article.form-contact
             h3 Envianos tu consulta
-            form(action="", method="post")
-                input(type="text", name="", placeholder="Nombre completo")
-                input(type="email", name="", placeholder="ejemplo@dominio.com")
-                textarea(name="", cols="30", rows="10", placeholder="Deja tu mensaje")
+            form(action="enviar.php", method="post")
+                input(type="text", name="nombre", placeholder="Nombre completo", required)
+                input(type="email", name="correo", placeholder="ejemplo@dominio.com", required)
+                textarea(name="comentario", cols="30", rows="10", placeholder="Deja tu mensaje", required)
                 button(type="submit") Enviar
